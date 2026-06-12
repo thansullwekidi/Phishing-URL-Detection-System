@@ -1,0 +1,16 @@
+MODEL CONFIGURATION
+===================
+label: phishing = 1, legitimate = 0 (kedua dataset disamakan)
+
+1) model_lexical_svm.pkl
+   StandardScaler + LinearSVC(C=1.0)
+   input: 22 fitur leksikal URL (urutan = key 'features')
+   train: PhiUSIIL (235.795). In-dist acc 0.993; cross-dataset acc 0.496 (gagal generalisasi).
+
+2) model_charngram_svm.pkl
+   TfidfVectorizer(char_wb, 3-5gram, max=20000) + LinearSVC(C=1.0)
+   input: string URL mentah
+   train: PhiUSIIL. In-dist acc 0.998; cross-dataset AUC 0.940 (satu-satunya yang transfer).
+
+Cara pakai:
+  import joblib; m=joblib.load('model_charngram_svm.pkl'); m['pipeline'].predict(['http://contoh-url.com/login'])

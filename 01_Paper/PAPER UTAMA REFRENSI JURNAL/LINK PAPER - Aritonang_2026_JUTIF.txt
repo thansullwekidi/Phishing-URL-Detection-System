@@ -1,0 +1,5 @@
+Judul: PhiSN: Phishing URL Detection Using Segmentation and NLP Features
+Jurnal: Journal of Information Processing, Volume 32, halaman 973–989
+DOI: https://doi.org/10.2197/ipsjjip.32.973
+Link PDF:
+https://www.jstage.jst.go.jp/article/ipsjjip/32/0/32_973/_pdf

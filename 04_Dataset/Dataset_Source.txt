@@ -1,0 +1,36 @@
+DATASET SOURCE — UAS Kecerdasan Buatan (Deteksi URL Phishing)
+=============================================================
+
+D1 — DATASET UTAMA (sama dengan jurnal acuan)
+---------------------------------------------
+Nama        : PhiUSIIL Phishing URL Dataset
+Jumlah data : 235.795 baris  (134.850 legitimate, 100.945 phishing)
+Jumlah fitur: 56 (5 kolom teks: FILENAME, URL, Domain, TLD, Title + 50 numerik + label)
+Kelas/label : 1 = legitimate, 0 = phishing  (PERHATIAN: konvensi terbalik dari intuisi)
+Sumber      : UCI Machine Learning Repository (ID 967) / Kaggle
+Link        : https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
+Paper asal  : A. Prasad & S. Chandra (2024), "PhiUSIIL: ... similarity index and incremental
+              learning", Computers & Security, vol. 136, doi:10.1016/j.cose.2023.103545
+Tanggal akses: Juni 2026
+Catatan     : Jurnal acuan (Aritonang dkk. 2026) menulis 256.795 baris — itu TYPO;
+              jumlah kanonik PhiUSIIL = 235.795. Gunakan angka kanonik.
+
+D2 — DATASET UJI GENERALISASI (cross-dataset, independen)
+---------------------------------------------------------
+Nama        : PhishDataset (balanced)
+Jumlah data : 20.000 baris  (10.000 phishing, 10.000 legitimate)
+Kolom       : URLs (string), Labels
+Kelas/label : 1 = phishing, 0 = legitimate
+Sumber      : phishing dari PhishTank (Mei–Juni 2021); legitimate dari IP2Location
+Repo        : https://github.com/ESDAUNG/PhishDataset  (berkas: "data_bal - 20000.xlsx")
+Paper asal  : E. S. Aung & H. Yamana (2021), "Segmentation-based Phishing URL Detection",
+              Proc. IEEE/WIC/ACM WI-IAT '21, doi:10.1145/3486622.3493983
+Tanggal akses: Juni 2026
+
+CATATAN REPRODUKSI
+------------------
+- Label disatukan menjadi phishing = 1 pada kedua dataset (D1 di-flip).
+- Fitur cross-dataset diekstrak ulang dari string URL dengan ekstraktor identik
+  (lihat 05_Source_Code/crossdataset.py), bukan memakai fitur pre-computed PhiUSIIL,
+  agar hanya distribusi yang berbeda antar-dataset.
+- Cross-check integritas D1 ke sumber UCI resmi (md5) sebelum submit final.

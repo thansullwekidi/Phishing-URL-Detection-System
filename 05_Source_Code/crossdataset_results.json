@@ -1,0 +1,66 @@
+{
+ "SVM lexical": {
+  "D1 in-dist (PhiUSIIL hold)": {
+   "acc": 0.993,
+   "f1": 0.9918,
+   "rec": 0.9839,
+   "prec": 0.9999,
+   "auc": 0.9968
+  },
+  "D2 CROSS (PhishDataset)": {
+   "acc": 0.496,
+   "f1": 0.6631,
+   "rec": 0.9921,
+   "prec": 0.498,
+   "auc": 0.7847
+  }
+ },
+ "RF lexical": {
+  "D1 in-dist (PhiUSIIL hold)": {
+   "acc": 0.9965,
+   "f1": 0.9959,
+   "rec": 0.9936,
+   "prec": 0.9981,
+   "auc": 0.9978
+  },
+  "D2 CROSS (PhishDataset)": {
+   "acc": 0.4975,
+   "f1": 0.6644,
+   "rec": 0.995,
+   "prec": 0.4987,
+   "auc": 0.496
+  }
+ },
+ "SVM NLP(char)": {
+  "D1 in-dist (PhiUSIIL hold)": {
+   "acc": 0.9979,
+   "f1": 0.9976,
+   "rec": 0.9953,
+   "prec": 0.9999,
+   "auc": 0.9991
+  },
+  "D2 CROSS (PhishDataset)": {
+   "acc": 0.6133,
+   "f1": 0.7201,
+   "rec": 0.9946,
+   "prec": 0.5643,
+   "auc": 0.9401
+  }
+ },
+ "SVM lexical (REVERSE D2->D1)": {
+  "D2 in-dist (hold)": {
+   "acc": 0.8648,
+   "f1": 0.856,
+   "rec": 0.804,
+   "prec": 0.9152,
+   "auc": 0.9296
+  },
+  "D1 CROSS (PhiUSIIL)": {
+   "acc": 0.9014,
+   "f1": 0.8718,
+   "rec": 0.7831,
+   "prec": 0.9832,
+   "auc": 0.9736
+  }
+ }
+}

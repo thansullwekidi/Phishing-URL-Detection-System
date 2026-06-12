@@ -1,0 +1,114 @@
+{
+ "results": [
+  {
+   "setup": "FULL (50 feat, =paper)",
+   "model": "LinearSVC",
+   "acc": 0.9999,
+   "prec": 0.9999,
+   "rec": 1.0,
+   "f1": 0.9999,
+   "auc": 1.0,
+   "sec": 2.2
+  },
+  {
+   "setup": "minus URLSimilarityIndex",
+   "model": "LinearSVC",
+   "acc": 0.9998,
+   "prec": 0.9998,
+   "rec": 0.9999,
+   "f1": 0.9999,
+   "auc": 1.0,
+   "sec": 1.6
+  },
+  {
+   "setup": "URL-only (pre-visit)",
+   "model": "LinearSVC",
+   "acc": 0.9966,
+   "prec": 0.9942,
+   "rec": 1.0,
+   "f1": 0.9971,
+   "auc": 0.9982,
+   "sec": 3.5
+  },
+  {
+   "setup": "CONTENT-only (needs fetch)",
+   "model": "LinearSVC",
+   "acc": 0.9957,
+   "prec": 0.9972,
+   "rec": 0.9953,
+   "f1": 0.9962,
+   "auc": 0.9998,
+   "sec": 1.8
+  },
+  {
+   "setup": "FULL [baseline]",
+   "model": "LogisticRegression",
+   "acc": 0.9999,
+   "prec": 0.9998,
+   "rec": 1.0,
+   "f1": 0.9999,
+   "auc": 1.0,
+   "sec": 0.4
+  },
+  {
+   "setup": "FULL [baseline]",
+   "model": "RandomForestClassifier",
+   "acc": 1.0,
+   "prec": 1.0,
+   "rec": 1.0,
+   "f1": 1.0,
+   "auc": 1.0,
+   "sec": 19.4
+  },
+  {
+   "setup": "URL-only [baseline]",
+   "model": "LogisticRegression",
+   "acc": 0.9961,
+   "prec": 0.9936,
+   "rec": 0.9996,
+   "f1": 0.9966,
+   "auc": 0.9985,
+   "sec": 0.5
+  },
+  {
+   "setup": "URL-only [baseline]",
+   "model": "RandomForestClassifier",
+   "acc": 0.9965,
+   "prec": 0.9956,
+   "rec": 0.9983,
+   "f1": 0.997,
+   "auc": 0.9986,
+   "sec": 19.6
+  },
+  {
+   "setup": "NLP-only (URL char 3-5gram)",
+   "model": "LinearSVC",
+   "acc": 0.9978,
+   "prec": 0.9962,
+   "rec": 0.9999,
+   "f1": 0.9981,
+   "auc": 0.9989,
+   "sec": 2.9
+  },
+  {
+   "setup": "URL-struct + NLP (combined)",
+   "model": "LinearSVC",
+   "acc": 0.9981,
+   "prec": 0.9967,
+   "rec": 1.0,
+   "f1": 0.9983,
+   "auc": 0.999,
+   "sec": 6.1
+  }
+ ],
+ "cv": {
+  "FULL": {
+   "f1_mean": 0.9999,
+   "f1_std": 0.0
+  },
+  "URL-only": {
+   "f1_mean": 0.9972,
+   "f1_std": 0.0001
+  }
+ }
+}
