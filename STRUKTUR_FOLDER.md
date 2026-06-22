@@ -39,17 +39,3 @@ Nama_NIM_UAS_AI/
     └── Turnitin_Report.pdf            ⬜ jalankan Turnitin (≤15%)
 ```
 
-## Checklist akhir (tugasmu)
-- [ ] Isi placeholder `[isi]` (nama, NIM, kelas, universitas, email) di README, paper, slide.
-- [ ] Download 10 PDF ke `01_Paper/`; isi angka hasil `(cek)` di mapping.
-- [ ] Verifikasi kuartil `(cek)`; ganti P10 (IJCA); verifikasi P3 (TSP).
-- [ ] Taruh dataset di `04_Dataset/Raw_Dataset/`.
-- [ ] Paste paper ke template IEEE resmi → format 2 kolom; export PDF final.
-- [ ] Turnitin → `11_Turnitin/`.
-- [ ] (Bonus) Push ke GitHub berdokumentasi; set Drive "Anyone with the link can view".
-
-## Bonus yang sudah otomatis terpenuhi
-- ✅ Lebih dari satu dataset (PhiUSIIL + PhishDataset).
-- ✅ Lebih dari satu metode pembanding (SVM, RF, LogReg).
-```
-```
