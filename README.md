@@ -1,10 +1,4 @@
-# UAS Kecerdasan Buatan — Deteksi URL Phishing (Cross-Dataset Audit)
 
-**Nama:** _[isi]_  ·  **NIM:** _[isi]_  ·  **Kelas:** _[isi]_
-**Judul:** Beyond 99% Accuracy: A Cross-Dataset Audit of NLP and SVM Phishing-URL Detection on the PhiUSIIL Benchmark
-**Jurnal acuan:** Aritonang dkk. (2026), JUTIF 7(1), 552–570. DOI: 10.52436/1.jutif.2026.7.1.5334
-
----
 
 ## Research Gap
 - **G1 — Benchmark saturation:** pada PhiUSIIL hampir semua subset fitur (bahkan string URL mentah) mencapai ≥99.7%; akurasi 99.99% adalah sifat dataset, bukan keunggulan metode.
