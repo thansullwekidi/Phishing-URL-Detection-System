@@ -45,14 +45,3 @@ python crossdataset.py      # RM2: cross-dataset + reverse + NLP     -> crossdat
 python make_figures.py      # 4 figur -> fig1..fig4.png
 ```
 
----
-
-## Struktur Folder
-`Nama_NIM_UAS_AI/` — lihat `STRUKTUR_FOLDER.md` untuk pemetaan lengkap tiap berkas ke 11 subfolder + checklist.
-
-## Catatan penting (wajib dibereskan sebelum submit)
-1. Isi semua placeholder `[isi]` (nama, NIM, kelas, universitas, email) di README, paper, dan slide.
-2. Verifikasi kuartil/indeks `(cek)` di `02_Literature_Mapping.md`; ganti P10 (IJCA, non-Scopus); verifikasi P3 (TSP).
-3. Download 10 PDF referensi ke `01_Paper/`.
-4. Format 2-kolom final: paste isi `Draft_Artikel_IEEE.docx` ke template IEEE resmi.
-5. Jalankan Turnitin (≤15%); cross-check md5 dataset ke UCI resmi.
